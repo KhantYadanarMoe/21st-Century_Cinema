@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21st Century Cinema</title>
+    <script src="https://kit.fontawesome.com/3fe29430bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="shortcut icon" href="../images/21cc.png">
+    <link rel="stylesheet" href="../CSS/lightslider.css">
+    <script src="../js/JQuery3.3.1.js"></script>
+    <script src="../js/lightslider.js"></script>
+</head>
+<body>
+    <div class="bc bg">
+        <nav>
+            <a href="#" class="logo">
+                <img src="../images/21.png" alt="">
+            </a>
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="../HTML/main.html">Home</a></li>
+                <li><a href="../movies/movie.html">Movies</a></li>
+                <li><a href="../tv shows/show.html">TV Shows</a></li>
+                <li><a href="../drama/drama.html">Drama</a></li>
+                <li><a href="../cartoon/cartoon.html">Cartoon</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="movie-photo">
+                <img src="../images/l-1.jpg" alt="">
+                <div class="content">
+                    <h1>Stranger Things</h1>
+                    <div class="type">
+                        <p>Thriller,</p>
+                        <p>Horror,</p>
+                        <p>Mystery,</p>
+                        <p>Sci-fi</p>
+                    </div>
+                    <p class="storyline">
+                        A small town uncovers a mystery involving secret experiments, <br> 
+                        terrifying supernatural forces and one strange little girl.
+                    </p>
+                    <a href="#" class="btns">
+                        <p><i class="fa-solid fa-download"></i>                  DOWNLOAD</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#autoWidth,#autoWidth2').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+                } 
+            });  
+          });        
+    </script>
+</body>
+</html>
